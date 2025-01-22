@@ -48,7 +48,7 @@ Right now, this is a skeleton project—everything is basic and constantly evolv
 
 - **Add sensors**: Things like obstacle avoidance or mapping the environment.
 - **Better control**: Fully remote control via Wi-Fi.
-- **More features**: Maybe turn this into something cool, like a drawing bot or even a combat bot?
+- **More features**: Add a raspbery pi  there are holes in the top to mount one a usb c powersuuply and a handy usb breakout it's almost like I planned this?
 
 ---
 
