@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg2805"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="omnibot-lid-bevel.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview2807"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.86174174"
+     inkscape:cx="23.78903"
+     inkscape:cy="486.22456"
+     inkscape:window-width="1920"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" /><defs
+     id="defs2802" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       id="g1672"
+       transform="rotate(-45,70.338333,214.55056)" /><g
+       inkscape:label="Layer 1"
+       id="layer1-2"
+       transform="rotate(-45,105,148.5)"><path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 81.301809,53.657087 h 47.396411 l 71.14469,71.144693 v 47.39642 l -71.14469,71.14471 H 81.301798 L 10.157087,172.19819 v -47.39642 z"
+         id="path2987" /></g><g
+       inkscape:label="Layer 1"
+       id="layer1-3"
+       transform="rotate(-45,105,148.5)"><path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 10.157088,172.19818 v -47.3964 L 81.301777,53.657089 H 128.6982 l 71.14471,71.144691 v 47.39642 l -71.14472,71.14471 H 81.301769 Z"
+         id="path2987-6" /><path
+         style="fill:none;stroke:#000000;stroke-width:0.259011px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 12.154508,171.69909 v -46.39822 l 69.646359,-69.646361 46.398243,1e-6 69.64638,69.64636 v 46.39824 L 128.1991,241.34549 H 81.800858 Z"
+         id="path984" /></g></g></svg>

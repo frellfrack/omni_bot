@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg2805"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="omnibot-l4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2807"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.60934343"
+     inkscape:cx="739.32035"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1280"
+     inkscape:window-height="987"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1672" />
+  <defs
+     id="defs2802" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1672"
+       transform="translate(-36.552631,-43.855261)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.330705px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 116.60716,92.520613 h 49.89096 l 74.88916,74.889157 v 49.89097 l -74.88916,74.88917 H 116.60716 L 41.717982,217.30074 v -49.89098 z"
+         id="path1391" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 81.301809,53.657087 h 47.396411 l 71.14469,71.144693 v 47.39642 l -71.14469,71.14471 H 81.301798 L 10.157087,172.19819 v -47.39642 z"
+       id="path2987" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 80.054528,48.665352 h 49.890962 l 74.88916,74.889158 v 49.89097 l -74.88916,74.88917 H 80.054528 l -74.8891772,-74.88917 -4e-6,-49.89098 z"
+       id="path3069" />
+  </g>
+</svg>
