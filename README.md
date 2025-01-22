@@ -1,5 +1,6 @@
 # FOUR-WHEELED OMNI BOT
-![sexy omnibot](omnibot.jpg)
+![Sexy Omnibot](omnibot.jpg)
+
 This is a **work in progress** project for a four-wheeled omni-directional robot. It’s powered by a **Raspberry Pi Pico W**, using **two L298N motor drivers** and **four CQRobot Ocean 131.3:1 Metal DC Geared-Down Motors**. The motors drive custom **omni wheels** you can find here: [Thingiverse](https://www.thingiverse.com/thing:2506412).
 
 ---
@@ -15,7 +16,7 @@ This is a **work in progress** project for a four-wheeled omni-directional robot
 
 ## What It Does (or Will Do)
 
-- Moves in **any direction** (forward, sideways, diagonally, you name it but it doesn't fly).
+- Moves in **any direction** (forward, sideways, diagonally—you name it, but it doesn’t fly).
 - Wi-Fi control is planned (thanks to the Pico W).
 - Uses PID control for smooth motor performance (eventually).
 
@@ -37,6 +38,7 @@ Right now, this is a skeleton project—everything is basic and constantly evolv
 2. **Get the Code Running**:
    - Flash MicroPython onto the Raspberry Pi Pico W.
    - Clone this repo and upload the files to the Pico W.
+   - Fix my mistakes call me an idiot 
    - Make sure to update pin configurations in the code to match your setup.
 
 3. **Power It On**:
@@ -48,7 +50,7 @@ Right now, this is a skeleton project—everything is basic and constantly evolv
 
 - **Add sensors**: Things like obstacle avoidance or mapping the environment.
 - **Better control**: Fully remote control via Wi-Fi.
-- **More features**: Add a raspbery pi  there are holes in the top to mount one a usb c powersuuply and a handy usb breakout it's almost like I planned this?
+- **More features**: Add a Raspberry Pi! There are holes in the top to mount one, along with a USB-C power supply and a handy USB breakout. It’s almost like I planned this!
 
 ---
 
