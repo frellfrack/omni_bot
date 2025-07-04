@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg862"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="omnibot-lid-feet.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview864"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77326038"
+     inkscape:cx="170.05915"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs859" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g294"
+       transform="rotate(45,-16.806294,98.038599)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 81.307164,-47.252765 5.271013,10.135361 36.955573,-0.192013 5.16983,-9.943348 1.24727,-4.991735 H 80.059889 Z"
+         id="path993" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 199.84827,23.89193 -10.13536,5.27102 0.19201,36.95557 9.94335,5.16983 4.99174,1.24727 V 22.64466 Z"
+         id="path1250" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 128.70358,142.43306 -5.27102,-10.13536 -36.95557,0.19201 -5.16983,9.94335 -1.24727,4.99174 h 49.89096 z"
+         id="path1254" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 10.162446,71.28834 10.13536,-5.27102 -0.19201,-36.95557 -9.94335,-5.16983 -4.9917399,-1.24727 v 49.89096 z"
+         id="path1256" />
+    </g>
+    <g
+       id="g361"
+       transform="rotate(45,38.168402,135.13881)">
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="circle413"
+         cx="-110.67953"
+         cy="184.82326"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="rotate(-90)" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="circle417"
+         cx="-84.679527"
+         cy="184.82326"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="rotate(-90)" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1931"
+         cx="81.52327"
+         cy="187.27953"
+         rx="1.6276959"
+         ry="1.627696" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1935"
+         cx="107.52326"
+         cy="187.27953"
+         rx="1.6276959"
+         ry="1.627696" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1943"
+         cx="83.97953"
+         cy="-4.9232626"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="rotate(90)" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1947"
+         cx="109.97953"
+         cy="-4.9232626"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="rotate(90)" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1955"
+         cx="-108.22327"
+         cy="-7.3795247"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="scale(-1)" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.244608"
+         id="ellipse1959"
+         cx="-82.223267"
+         cy="-7.3795247"
+         rx="1.6276959"
+         ry="1.627696"
+         transform="scale(-1)" />
+    </g>
+  </g>
+</svg>

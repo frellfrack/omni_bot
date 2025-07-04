@@ -1,0 +1,182 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1em 0;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #333;
+    background:#eee;
+    padding: 0.5em 1em; 
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+#statusbar {
+  background: #000;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#sliders {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.slider {
+  position: relative;
+  width: 60px;
+  height: 300px;
+  background: #ddd;
+  border-radius: 10px;
+  touch-action: none;
+}
+
+.slider-label {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.slider-thumb {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #222;
+  border-radius: 10px;
+  touch-action: none;
+  transition: top 0.2s ease;
+}
+
+.connecting {
+  color: orange;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+.disconnected {
+  color: red;
+}
+
+.connected {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+#battery {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+
+   #remote {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        width: 100vw;
+        height: 100%;
+        box-sizing: border-box;
+        background: transparent;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-items: center;
+        padding-top:3em
+    }
+
+    .joystick {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        max-width: 300px;
+        max-height: 300px;
+        aspect-ratio: 1 / 1;
+        border-radius: 1.5em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: 10px double #555;
+        background: radial-gradient(circle at 50% 50%, #444, #000);
+    }
+
+
+
+
+    #remote > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+.knob {
+  position: absolute;
+  width: 35%;   /* increased from 20% */
+  height: 35%;
+  background-color: #000;
+  border-radius: 50%;
+  transition: transform 0.1s ease;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+}
+
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #remote {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding-top: 1em;
+  }
+
+  .joystick {
+    width: 60vw;
+    height: 60vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}

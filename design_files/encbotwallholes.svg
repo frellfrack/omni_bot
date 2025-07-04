@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="220.00002mm"
+   height="220mm"
+   viewBox="0 0 220.00002 220"
+   version="1.1"
+   id="svg1173"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="encbotwallholes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1175"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="-60.811183"
+     inkscape:cy="702.86414"
+     inkscape:window-width="1566"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1170" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.1325612e-6,-58.5)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.459845;stroke-dasharray:none"
+       id="rect293"
+       width="8.3760567"
+       height="37.555328"
+       x="-3.1033006"
+       y="71.246689" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.454463;stroke-dasharray:none"
+       id="rect297"
+       width="8.2114468"
+       height="37.686363"
+       x="215.12117"
+       y="71.196754" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.571188;stroke-dasharray:none"
+       id="rect299"
+       width="14.330533"
+       height="37.400707"
+       x="211.45314"
+       y="228.18324" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.64959;stroke-dasharray:none"
+       id="rect301"
+       width="18.671911"
+       height="37.336731"
+       x="-8.2598314"
+       y="228.21564" />
+  </g>
+</svg>

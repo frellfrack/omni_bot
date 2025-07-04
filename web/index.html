@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Touch Sliders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="statusbar">
+    <div id="joystick_values">X: 0.00, Y: 0.00, Z: 0.00</div>
+    <div id="ws_status">Status: <span id="ws_indicator" class="disconnected">Disconnected</span></div>
+    <div id="battery">
+      <svg width="24" height="12" viewBox="0 0 24 12" id="battery_icon">
+        <rect x="0" y="2" width="20" height="8" stroke="black" fill="none" stroke-width="2"/>
+        <rect x="21" y="4" width="2" height="4" fill="black"/>
+        <rect id="battery_level_fill" x="0" y="2" width="0" height="8" fill="green"/>
+      </svg>
+      <span id="battery_value">--%</span>
+    </div>
+
+    <div class="buttons">
+        <a href="index.html">Sliders</a>
+        <a href="joystick.html">Joysticks</a>
+    </div>
+
+    </nav>
+
+  <div id="sliders">
+    <div class="slider" data-axis="x" data-default="0" data-min="-1" data-max="1" data-step="0.01" data-reset="true">
+      <div class="slider-label">X</div>
+      <div class="slider-thumb"></div>
+    </div>
+    <div class="slider" data-axis="y" data-default="0" data-min="-1" data-max="1" data-step="0.01" data-reset="true">
+      <div class="slider-label">Y</div>
+      <div class="slider-thumb"></div>
+    </div>
+    <div class="slider" data-axis="z" data-default="0" data-min="-1" data-max="1" data-step="0.01" data-reset="true">
+      <div class="slider-label">Z</div>
+      <div class="slider-thumb"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

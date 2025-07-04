@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wi-Fi Configuration</title>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    async function loadNetworks() {
+      const res = await fetch("/networks.json");
+      const networks = await res.json();
+      const select = document.getElementById("ssid");
+      select.innerHTML = networks.map(ssid =>
+        `<option value="${ssid}">${ssid}</option>`).join("");
+    }
+
+    async function loadConfigs() {
+      const res = await fetch("/configs.json");
+      const configs = await res.json();
+      const container = document.getElementById("saved-networks");
+      container.innerHTML = configs.map(ssid => `
+        <div class="network">
+          <strong>${ssid}</strong>
+          <button onclick="editConfig('${ssid}')">Edit</button>
+          <button onclick="deleteConfig('${ssid}')">Delete</button>
+        </div>
+      `).join("");
+    }
+
+    async function deleteConfig(ssid) {
+      await fetch("/delete", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: "ssid=" + encodeURIComponent(ssid)
+      });
+      loadConfigs();
+    }
+
+    async function editConfig(ssid) {
+      const password = prompt("Enter new password for " + ssid + ":");
+      if (password !== null) {
+        await fetch("/edit", {
+          method: "POST",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: "ssid=" + encodeURIComponent(ssid) + "&password=" + encodeURIComponent(password)
+        });
+        loadConfigs();
+      }
+    }
+
+    window.onload = () => {
+      loadNetworks();
+      loadConfigs();
+    };
+  </script>
+</head>
+<body>
+  <h2>Wi-Fi Setup</h2>
+
+  <form action="/save" method="post">
+    <label for="ssid">Available Networks:</label>
+    <select name="ssid" id="ssid" required></select>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+
+    <button type="submit">Connect</button>
+  </form>
+
+  <hr>
+
+  <h3>Saved Networks</h3>
+  <div id="saved-networks"></div>
+</body>
+</html>
