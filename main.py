@@ -45,13 +45,29 @@ def motor_timer_callback(timer):
 motor_timer = Timer()
 motor_timer.init(period=20, mode=Timer.PERIODIC, callback=motor_timer_callback)
 
+
+def ws_client_connected():
+    bot.stop()
+
+def ws_client_disconnected():
+    bot.stop()
+    print("A WebSocket client has disconnected.")
+
+def ws_client_error(e):
+    bot.stop()
+    print("WebSocket error:", e)
+
+
 # === Main Async Loop ===
 async def main():
     global motor_update_due
 
     bot.stop()
 
-    server = WebServer(router=router, static_dir="web")
+    server = WebServer(router=router,
+    static_dir="web",
+    on_disconnect=ws_client_disconnected,
+    on_error=ws_client_error)
     await server.start()
 
     while True:

@@ -7,10 +7,13 @@ import uhashlib
 import os
 
 class WebServer:
-    def __init__(self, router, static_dir="web", port=80):
+    def __init__(self, router, static_dir="web", port=80, on_connect=None, on_disconnect=None, on_error=None):
         self.router = router
         self.static_dir = static_dir
         self.port = port
+        self.on_connect = on_connect
+        self.on_disconnect = on_disconnect
+        self.on_error = on_error
 
     def _websocket_accept(self, key):
         GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"
@@ -106,15 +109,20 @@ class WebServer:
                     f"Sec-WebSocket-Accept: {accept}\r\n\r\n"
                 )
                 await writer.awrite(response)
-                print("WebSocket connected")
+                if self.on_connect:
+                    self.on_connect()    
                 await self._handle_ws(reader, writer)
             else:
                 path = req.decode().split()[1]
                 await self._serve_file(writer, path)
         except Exception as e:
+            if self.on_error:
+                self.on_error(e)
             print("Client error:", e)
         finally:
             await writer.aclose()
+            if self.on_disconnect:
+                self.on_disconnect()
             print("Client disconnected")
 
     async def start(self):
