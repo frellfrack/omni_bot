@@ -55,7 +55,7 @@ class MotorPID:
     def set_target_velocity(self, velocity_rads):
         """Set target motor velocity in radians per second."""
         self.target_velocity = velocity_rads
-    
+        self.target_position = None
     def get_velocity(self):
         """Returns the current motor velocity in radians per second."""
         return self._current_velocity_rads
@@ -63,7 +63,7 @@ class MotorPID:
     def set_target_position(self, encoder_counts):
         """Set target motor position in encoder counts."""
         self.target_position = encoder_counts
-    
+        self.target_velocity = None
     def get_position(self):
         """Returns the current motor position in encoder counts."""
         return self._current_position_counts
@@ -169,4 +169,40 @@ class MotorPID:
 
         self._set_pwm(output)
         self.prev_error = vel_error
-       
+
+if __name__ == "__main__":
+    import time
+
+    # Adjust these pin numbers and parameters for your hardware setup
+    motor = MotorPID(
+        motor_name="test_motor",
+        input1=0, input2=1,
+        encoder_a=2, encoder_b=3,
+        gear_ratio=30, encoder_resolution=12,
+        kp=1.0, ki=0.0, kd=0.0
+    )
+
+    # Set initial state for testing
+    motor._current_velocity_rads = 0.0
+    motor._current_position_counts = 0
+
+    print("Testing velocity mode...")
+    motor.set_target_velocity(5.0)  # rad/s
+    
+    for i in range(50):
+        motor.update()
+        time.sleep(0.1)
+
+    print("Testing position mode...")
+    motor.set_target_position(100)  # encoder counts
+    
+    for i in range(50):
+        motor.update()
+        time.sleep(0.1)
+
+    print("Testing position with velocity cap mode...")
+    motor.set_target_position_and_velocity(200, 2.0)  # 200 counts, max 2 rad/s
+    for i in range(50):
+        motor.update()
+        time.sleep(0.1)
+
