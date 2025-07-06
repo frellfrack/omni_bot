@@ -1,1 +1,58 @@
+# Byte-compiled / cache / temp files
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.obj
+*.elf
+*.bin
+*.map
+*.hex
+*.uf2
+*.mpy
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.swp
+*.DS_Store
+
+# CMake and build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+*.ninja
+*.dep
+*.d
+
+# Pico SDK and MicroPython submodules
+pico-sdk/
+micropython/
+micropython-lib/
+USER_C_MODULES/
+
+# VSCode and editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Firmware and generated files
+firmware.uf2
+firmware.bin
+firmware.elf
+*.lst
+*.dis
+
+# Misc
+.env
+.venv/
+venv/
+*.egg-info/
+dist/
+*.mod.c
+*.mod.o
+*.mod.so
 wifi_config.json

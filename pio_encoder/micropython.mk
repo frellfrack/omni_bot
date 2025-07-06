@@ -1,2 +1,2 @@
 USER_C_MODULES += $(USERMOD_DIR)
-SRC_USERMOD += $(USERMOD_DIR)/encoder.c
+SRC_USERMOD += $(USERMOD_DIR)/quadrature_encoder.c

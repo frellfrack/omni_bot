@@ -1,0 +1,3 @@
+add_library(usermod_pio_encoder STATIC quadrature_encoder.c)
+target_include_directories(usermod_pio_encoder PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(usermod_pio_encoder pico_stdlib)
