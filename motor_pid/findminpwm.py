@@ -1,7 +1,8 @@
-import machine
 import time
 import math
 from motor_pid.encoder import SimpleEncoder
+from omni_bot.config import MOTOR_PINS
+import machine
 
 def find_motor_characteristics(input1, input2, encoder_a, encoder_b,
                                 gear_ratio, encoder_resolution,
@@ -26,17 +27,18 @@ def find_motor_characteristics(input1, input2, encoder_a, encoder_b,
         else:
             motor_input1.duty_u16(0)
             motor_input2.duty_u16(0)
+
     def _ramp_down(current_pwm, forward=True, step=1000, delay_ms=50):
         print("Ramping down...")
         for pwm in range(current_pwm, 0, -step):
             _set_pwm(pwm if forward else -pwm)
             time.sleep_ms(delay_ms)
         _set_pwm(0)
-        
+
     def run_direction(forward=True):
         print(f"\n--- Testing {'forward' if forward else 'reverse'} direction ---")
         encoder.reset()
-        initial_pos = encoder.read()
+        last_pos = encoder.read()
         min_pwm = None
 
         # Step 1: ramp up to find minimum effective PWM
@@ -44,7 +46,8 @@ def find_motor_characteristics(input1, input2, encoder_a, encoder_b,
             _set_pwm(pwm if forward else -pwm)
             time.sleep_ms(delay_ms)
             new_pos = encoder.read()
-            movement = new_pos - initial_pos
+            movement = new_pos - last_pos
+            last_pos = new_pos
             print(f"PWM: {pwm:<5}  Δ Encoder: {movement}")
 
             if abs(movement) > 1:
@@ -74,18 +77,15 @@ def find_motor_characteristics(input1, input2, encoder_a, encoder_b,
             print(f"Measured speed: {rad_s:.2f} rad/s")
             time.sleep(0.1)
 
-        # Step 4: stop motor
         _ramp_down(65535, forward)
         return min_pwm, max_rad_s
 
-    # Test both directions
     min_fwd, max_fwd = run_direction(forward=True)
-    print("Resting for 1 second before reversing...")
+    print("Resting before reverse...")
     _set_pwm(0)
     time.sleep(1)
     min_rev, max_rev = run_direction(forward=False)
 
-    # Final report
     print("\n===== Motor Test Results =====")
     print(f"Min Forward PWM : {min_fwd if min_fwd is not None else 'Not detected'}")
     print(f"Max Forward Speed: {max_fwd:.2f} rad/s")
@@ -99,10 +99,28 @@ def find_motor_characteristics(input1, input2, encoder_a, encoder_b,
         "max_rad_s_reverse": max_rev
     }
 
-# Example usage
+# ============================
+# Run test for all motors
+# ============================
 if __name__ == "__main__":
-    find_motor_characteristics(
-        input1=2, input2=3,
-        encoder_a=10, encoder_b=11,
-        gear_ratio=131.3, encoder_resolution=64
-    )
+    all_results = {}
+
+    for key, cfg in MOTOR_PINS.items():
+        print(f"\n\n======= Testing Motor: {cfg['motor_name']} =======")
+        results = find_motor_characteristics(
+            input1=cfg["input1"],
+            input2=cfg["input2"],
+            encoder_a=cfg["encoder_a"],
+            encoder_b=cfg["encoder_b"],
+            gear_ratio=cfg["gear_ratio"],
+            encoder_resolution=cfg["encoder_resolution"]
+        )
+        all_results[cfg['motor_name']] = results
+        print("Waiting before next motor...\n")
+        time.sleep(2)
+
+    print("\n\n========== ALL MOTOR RESULTS ==========")
+    for name, result in all_results.items():
+        print(f"\n{name}:")
+        for k, v in result.items():
+            print(f"  {k}: {v}")

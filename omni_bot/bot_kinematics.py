@@ -92,3 +92,4 @@ if __name__ == "__main__":
         print("Rotate Right")
         bot.move(Vx=0.0, Vy=0.0, omega=-1, duration=3)
      
+ 

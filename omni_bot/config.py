@@ -26,8 +26,8 @@ MOTOR_PINS = {
     },
     "rear_right": {   
         "motor_name": "Rear Right",        
-        "input1": 6,
-        "input2": 7,
+        "input1": 7,
+        "input2": 6,
         "encoder_a": 18,
         "encoder_b": 19,
         "gear_ratio": 131.3,
@@ -36,8 +36,8 @@ MOTOR_PINS = {
     },
     "front_right": {
         "motor_name": "Front Right",
-        "input1": 9,
-        "input2": 8,
+        "input1": 8,
+        "input2": 9,
         "encoder_a": 20,
         "encoder_b": 21,
         "gear_ratio": 131.3,
